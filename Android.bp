@@ -122,6 +122,10 @@ cc_defaults {
             suffix: "-3.9.1",
         },
     },
+
+    // Turn off coverage as a workaround for coverage boot failure.
+    // http://b/269981180
+    native_coverage: false,
 }
 
 // C++ lite library for the NDK.
